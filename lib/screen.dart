@@ -8,19 +8,19 @@ class HomePage extends StatelessWidget {
         title: Text('Neighborhood Watch'),
       ),
       body: Stack(
-        // Stack allows layering content
+        
         children: [
           // Background image
           Image.asset(
             'images/background.jpg',
-            fit: BoxFit.cover, // Adjus
-            height: double.infinity, // Fills entire height
+            fit: BoxFit.cover, 
+            height: double.infinity,
           ),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Hero image (replace with your image path)
+                
                 Container(
                   margin: EdgeInsets.only(bottom: 20.0),
                   child: ClipRRect(
@@ -34,12 +34,12 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
 
-                // Title Text with Icon
+      
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.security,
-                        color: Colors.blue), // Use a defined icon
+                        color: Colors.blue), 
                     SizedBox(width: 10.0),
                     Text(
                       'Report Suspicious Activity',
@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
 
-                // Description Text with adjusted style
+                // Description Text
                 Text(
                   'Help keep your neighborhood safe by reporting suspicious activity.',
                   textAlign: TextAlign.center,
